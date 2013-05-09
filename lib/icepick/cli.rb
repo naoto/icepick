@@ -8,6 +8,7 @@ module Icepick
 
     def initialize(args)
       @options = Icepick::Option.parse(args)
+      exit if !@options[:search_word].nil?
     end
 
     def search
